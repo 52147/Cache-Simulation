@@ -20,7 +20,8 @@ public class Cache {
 	public void setValid(boolean valid) {
 		this.valid = valid;
 	}
-
+    
+	// if dirty bit is true, which means block has been written to, return 1
 	public int checkDirtyBit() {
 		if (dirtyBit) {
 			return 1;
