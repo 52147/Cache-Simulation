@@ -220,7 +220,6 @@ public class CacheSimulation {
 	// Display the cache
 	public void display(Cache[] c) {
 		String output = "\nSlot Valid DirtyBit Tag		Data\n";
-		// 		String rtn = "\nSlot Valid DirtyBit Tag		Data\n";
 
 
 		short[] cacheBlock = new short[c[0].getBlock().length];
