@@ -1,9 +1,10 @@
 public class Cache {
 
 	private boolean valid = false;
-	private boolean dirtyBit = false; 
+	private boolean dirtyBit = false;
 	// a modified page is called a dirty page
-	// the dirty bit indicates whether the page needs to be written out before its location in memory can be given to another page. 
+	// the dirty bit indicates whether the page needs to be written out before its
+	// location in memory can be given to another page.
 	private short tag = 0;
 	private short[] block = new short[16]; // cache block(offset) contains data
 
@@ -19,20 +20,18 @@ public class Cache {
 	public void setValid(boolean valid) {
 		this.valid = valid;
 	}
-	
+
 	public int isDirtyBit() {
 		if (dirtyBit) {
 			return 1;
-		}
-		else {
+		} else {
 			return 0;
 		}
 	}
+
 	public void setDirtyBit(boolean dirtyBit) {
 		this.dirtyBit = dirtyBit;
 	}
-	
-	
 
 	// Get and Set tag
 	public short getTag() {
