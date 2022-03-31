@@ -161,7 +161,7 @@ public class CacheSimulation {
 			System.out.print("(CACHE MISS) ");
 
 			// handling a miss of address
-			if ((slot.isValid() == 1) && (slot.isDirtyBit() == 1)) {
+			if ((slot.isValid() == 1) && (slot.checkDirtyBit() == 1)) {
 				short[] values = slot.getBlock();
 
 				short oldBlockBegine = (short) ((slot.getTag() << 8) + (slotField << 4));
@@ -227,7 +227,7 @@ public class CacheSimulation {
 
 		for (short i = 0; i < c.length; i++) {
 			cacheBlock = c[i].getBlock();
-			output += String.format("%2X%6d%8d%6X", i, c[i].isValid(), c[i].isDirtyBit(), c[i].getTag());
+			output += String.format("%2X%6d%8d%6X", i, c[i].isValid(), c[i].checkDirtyBit(), c[i].getTag());
 			output += String.format("%12X%4X%4X%4X%4X%4X%4X%4X%4X%4X%4X%4X%4X%4X%4X%4X%n", cacheBlock[0], cacheBlock[1],
 					cacheBlock[2], cacheBlock[3], cacheBlock[4], cacheBlock[5], cacheBlock[6], cacheBlock[7],
 					cacheBlock[8], cacheBlock[9], cacheBlock[10], cacheBlock[11], cacheBlock[12], cacheBlock[13],

@@ -21,7 +21,7 @@ public class Cache {
 		this.valid = valid;
 	}
 
-	public int isDirtyBit() {
+	public int checkDirtyBit() {
 		if (dirtyBit) {
 			return 1;
 		} else {
