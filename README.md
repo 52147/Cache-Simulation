@@ -13,3 +13,11 @@
 - Both of these numbers are smaller than a typical real cache, but make for a more manageable simulation. 
 - You should use a structure/class to manage each slot, where the structure consists of the appropriate information (e.g., a valid flag, tag, etc.) and you eventually
 have an array of these structures. 
+
+## 1. 說明
+更新於2023/1/3 : 要面試了，來整理回顧一下以前寫的作業!!    
+這是一個cache模擬程式，有三個function
+1. 讀取地址
+2. 寫入資料
+3. 顯示資料
+
