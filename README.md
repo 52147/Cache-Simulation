@@ -26,3 +26,5 @@ Cache 的資料儲存方式是直接映射(direct-mapped) : 每一個main memory
 3. 寫入資料
 4. 顯示資料
 
+## 2. 流程圖
+
