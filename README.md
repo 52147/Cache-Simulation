@@ -16,7 +16,7 @@ have an array of these structures.
 
 ## 1. 說明
 更新於2023/1/3 : 要面試了，來整理回顧一下以前寫的作業!!    
-Cache 是資料快取的地方，當CPU(processor)需要資料時，會先從cache裡尋找，cache裡沒找到才會從main memory裡找，這樣能減少讀取時間。
+Cache 是資料快取的地方，當CPU(processor)需要資料時，會先從cache裡尋找，cache裡沒找到才會從main memory裡找，這樣能減少讀取時間。   
 Cache 的資料儲存方式是直接映射(direct-mapped) : 每一個main memory address經過運算都有對應的cache儲存位置。
 
 這是一個cache模擬程式，模擬CPU對cache的操作，有三個function :
