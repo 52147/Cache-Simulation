@@ -19,8 +19,10 @@ have an array of these structures.
 Cache 是資料快取的地方，當CPU(processor)需要資料時，會先從cache裡尋找，cache裡沒找到才會從main memory裡找，這樣能減少讀取時間。
 Cache 的資料儲存方式是直接映射(direct-mapped) : 每一個main memory address經過運算都有對應的cache儲存位置。
 
-這是一個cache模擬程式，有三個function :
-1. 讀取地址
-2. 寫入資料
-3. 顯示資料
+這是一個cache模擬程式，模擬CPU對cache的操作，有三個function :
+1. 讀取地址 : 
+   - 先解析main memory 的field，找到 tag、slot、offset
+   - 利用slot 來查詢 cache block 的valid bit是不是等於0，等於0代表沒有儲存地址，或tag不等於 cache block 的 tag，如果以上兩個條件有1個符合，代表cache miss，cache中沒有儲存memory address。
+3. 寫入資料
+4. 顯示資料
 
